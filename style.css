@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    position:sticky;
+  
+    text-align: center;
+outline: 1px solid rgb(166, 161, 161);
+
+
+}
+
+
+#menu{
+   
+    margin: 5px;
+ float: left;
+ position: relative;
+ top: 15px;
+ padding: 2px;
+ background-color:rgba(187, 198, 196, 0.371);
+
+}
+
+
+/* sidebar */
+#sidebar{
+    display:none;
+    position: fixed;
+width: 0px;
+height: 100vh;
+background-color: #222;
+background-image: linear-gradient(to top,white,black);
+}
+#sidebar li{
+    display: block;
+    margin-bottom: 15px;
+  display: hidden;
+    padding:10px 0px;
+    color:white;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+} 
+#sidebar li:hover{
+    
+    background-color:rgba(3, 12, 10, 0.718);
+}
+#categories{
+    display: block;
+    text-align: left;
+    background-color:rgba(1, 5, 4, 0.371);
+    background-image: linear-gradient(white,black);
+    font-size: 25px;
+    color: rgba(217, 238, 235, 0.969);
+}
+
+.news-container{
+    display: flex;
+    background-color:rgb(1 ,5,4,0.371);
+    background-color: #fff;
+   
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+}
+.news-box{
+    width: 65vw;
+    
+    background-color: #fff;
+    display: flex;
+    overflow-y: scroll;
+    border: 2px solid rgb(202,204,205 /48%);
+    margin: 5px;
+    
+}
+.news-box img{
+    height: 100%;
+    width: 90%;
+}
+.news-box div{
+    padding: 10px;
+}
+@media screen and (max-width:500px) {
+    .news-box {
+
+        height: 35vh;
+        width: 90vw;
+        flex-direction: column;
+    }
+    .news-box div{
+        height: 100%;
+    }
+}
+
+
+/* footer */
+footer{
+    
+    /* bottom: 0; */
+    margin: 10px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+#terms{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+#contact{
+    border-left: 1px solid black;
+    padding-left: 12px;
+}
+
+
+
+
